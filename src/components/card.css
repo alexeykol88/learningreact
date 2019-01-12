@@ -1,0 +1,28 @@
+.maindiv{
+    background-color: rgb(112, 100, 100);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.FirstButton{
+    float:left;
+    color: #fff;
+  background-color: #08062b;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+float:left;
+  margin-left:2%;
+}
+.SecondButton{
+    float:right;
+    color: #fff;
+  background-color: #08062b;
+  padding: 10px;
+  border: none;
+  float : right;
+  border-radius: 15px;
+  margin-right: 2%;
+}

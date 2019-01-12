@@ -1,9 +1,6 @@
 body{
-  background-size: 100%;
 
-background-image: url('http://st.gde-fon.com/wallpapers_original/148307_derevo_doroga_pustota_tuman_2560x1600_www.Gde-Fon.com.jpg');
-
-background-color: #cadbc0;
+background-color: #08062b;
 
 background-attachment: fixed;
 }
@@ -11,6 +8,9 @@ background-attachment: fixed;
   text-align: center;
 }
 .trying{
-  color : rgb(87, 78, 78);
+  color : rgb(34, 151, 180);
   text-align: center;
+}
+.container{
+  padding:20px;
 }
