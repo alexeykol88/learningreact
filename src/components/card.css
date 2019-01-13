@@ -5,6 +5,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
     transition: 0.3s;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .FirstButton{
     float:left;
@@ -13,8 +14,8 @@
   padding: 10px;
   border: none;
   border-radius: 15px;
-float:left;
-  margin-left:2%;
+  margin-left: 2%;
+  
 }
 .SecondButton{
     float:right;
