@@ -14,3 +14,25 @@ background-attachment: fixed;
 .container{
   padding:20px;
 }
+.columnBtn{
+  color:black;
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.nameInput{
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.nameInput::-webkit-input-placeholder {color:#2D3A3A;}

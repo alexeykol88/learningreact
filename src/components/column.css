@@ -1,11 +1,13 @@
 .childdiv{
     text-align: center;
+    font-size: 70%;
     background-color: rgb(87, 78, 78);
     border: 1px solid #ccc;
     float: left;
-    width: 23.5%;
+    width: 23%;
+    height: 400px;
     margin-right: 2%;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     background-size: 100%;
     background-image: url("https://cdn-images-1.medium.com/max/1600/1*DVkLFr953djSo0q6cA0-kg.png");
     background-attachment: fixed;

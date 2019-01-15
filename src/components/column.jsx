@@ -5,8 +5,6 @@ import Card from "./card"
 
 export default class Column extends Component {
   render() {
-    const { items } = this.props;
-console.log(items);
     return ( 
       <div className = "childdiv">
         <h1>{this.props.name}</h1>
@@ -19,8 +17,6 @@ console.log(items);
     )
   }
 }
-
-
 Column.propTypes = {
   name : PropTypes.string,
   cards : PropTypes.array
