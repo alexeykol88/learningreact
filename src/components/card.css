@@ -8,13 +8,15 @@
     margin-bottom: 10px;
 }
 .FirstButton{
+  
     float:left;
     color: #fff;
   background-color: #08062b;
   padding: 10px;
   border: none;
   border-radius: 15px;
-  margin-left: 2%;
+  
+
   
 }
 .SecondButton{
@@ -25,5 +27,5 @@
   border: none;
   float : right;
   border-radius: 15px;
-  margin-right: 2%;
+  
 }
