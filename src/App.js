@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import 'prop-types';
 import './App.css';
 import './AppData';
 import Column from './components/column';
 import Modalbox from './components/modalbox'
+import Cardbtn from './components/cardbtn'
 import AppData from './AppData';
 
 const trying = "Trying something in React";
@@ -14,10 +16,14 @@ class App extends Component{
     columns : [],
     newColumnName : '',
   }
+
+  handleCardElOpen = () => {this.setState({cardbtnvisible : true})}
+  handleCardElClose = () => {this.setState({cardbtnvisible:false})}
+
   handleNewColumnNameChange = (event) => {
     this.setState({newColumnName : event.target.value});
   }
-  handleAddColumnFromServer = (pressed) => {
+  handleAddColumnsFromServer = (pressed) => {
     fetch(urlColumn)
    .then(res => res.json())
     .then(newcolumns => newcolumns.forEach(newcolumn => {
@@ -52,15 +58,18 @@ press = (pressed) => {
   render() {
   return (
      <div className = "container">
-      <h1 className = "trying">{trying}</h1>
       <div>
-        <Modalbox/>
+      <h1 className = "trying">{trying}</h1>
+        <Cardbtn/>
+      </div>
+      <div>
+        <Modalbox title="Some instruction for app"/>
       </div>
       <div>
         <button className="columnBtn" onClick = {this.press} >Add column!</button>
       </div>
       <div>
-        <button className="columnBtn" onClick = {this.handleAddColumnFromServer} >Test fetch !</button>
+        <button className="columnBtn" onClick = {this.handleAddColumnsFromServer} >Test fetch !</button>
       </div>
       <div>
         <input className="nameInput" type="text" 

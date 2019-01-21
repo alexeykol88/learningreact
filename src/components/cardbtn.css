@@ -1,0 +1,40 @@
+.maindiv{
+    position: absolute;
+    float : right;
+    top:2%;
+    right:0%;
+    color:black;
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid ;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.changingdiv{
+    position: absolute;
+    float : right;
+    top:2%;
+    right:12.5%;
+    color:black;
+    font-size: 100%;
+    background-color: rgb(112, 100, 100);
+    border: 1px solid ;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    border-radius: 5px;
+ 
+}
+.button{
+    color:black;
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+  
+}
