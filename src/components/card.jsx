@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
 import './card.css'
-import PropTypes from'prop-types';
+import PropTypes from 'prop-types';
 
-const text = `This is text for card component. Created by Alexey for React App. React was created by Jordan Walke, a software engineer at Facebook.`;
 export default class Card extends Component {
+  handleRemoveButtonClick = () => {
+    this.props.onRemove(this.props.id);
+ }
   render() {
     const { items } = this.props;
     console.log(items);
     return (
-      <div className="maindiv">
+      <div className="maincarddiv">
+      <button onClick={this.handleRemoveButtonClick} className="closecardbtn">X</button>
       <div>{this.props.title}</div>
       <br/>
+      <div>{this.props.description}</div>
+      <div className="cardbuttondiv">
       <button className="FirstButton">Button</button>
-      <button className="SecondButton">Button2</button>
+      <button className="SecondButton">Button</button>
+      </div>
       <br/>
       </div>
     )
@@ -20,8 +26,10 @@ export default class Card extends Component {
 }
 
 Card.propTypes = {
-    title : PropTypes.string
+    title : PropTypes.string,
+    description : PropTypes.string
 }
 Card.defaultProps ={
-  title : 'Default Title'
+  title : 'Default Title',
+  description : 'Default description'
 }

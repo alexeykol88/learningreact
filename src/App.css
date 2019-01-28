@@ -1,31 +1,53 @@
 body{
-
+  background-size:100%;
+background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/5PNlDRM/bird-eye-time-lapse-view-of-night-big-city-panorama-of-bangkok-thailand-with-road-skyscrapers-buildings_r0vhjvwjx_thumbnail-full01.png');
 background-color: #08062b;
-
+font-family: Verdana, Helvetica, Arial, sans-serif;
 background-attachment: fixed;
 }
 .App {
   text-align: center;
 }
 .trying{
-  
-  color : rgb(34, 151, 180);
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color : rgb(238, 241, 241);
   text-align: center;
+}
+.columnsopacity{
+  opacity:0.75;
 }
 .container{
   padding:20px;
 }
+.emptySpace{
+  height: 100px;
+}
+.emptySpaceAfter{
+  height: 100px;
+}
 .columnBtn{
-  color:black;
-  font-size: 100%;
-  background-color: rgb(112, 100, 100);
-  border: 1px solid #ccc;
+  color:white;
+  font-size: 120%;
+  opacity : 0.5;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color:  transparent;
+  border: 3px solid #ccc;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  margin-right:2px;
 }
+.columnBtn:hover{
+opacity : 1;
+}
+.divforcolbuttons{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 .nameInput{
   font-size: 100%;
   background-color: rgb(112, 100, 100);
@@ -37,3 +59,23 @@ background-attachment: fixed;
   margin-bottom: 10px;
 }
 .nameInput::-webkit-input-placeholder {color:#2D3A3A;}
+
+.inputInstruction{
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.sendFormButton{
+  float : right;
+  color:black;
+  font-size: 100%;
+  background-color: rgb(112, 100, 100);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-top: 10px;
+}

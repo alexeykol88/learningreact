@@ -12,8 +12,8 @@ export default class Modalbox extends Component {
   render() {
       if(this.state.visible===false)
     return (
-     <div>
-         <button onClick={this.handleOpen} className="openerbtn">Show modal</button>
+     <div className="openerbtndiv">
+         <button onClick={this.handleOpen} className="openerbtn">ADD CARD</button>
      </div>
     )
     if(this.state.visible===true)
@@ -22,10 +22,8 @@ export default class Modalbox extends Component {
         <div className="backgrounddiv">
           <div className="modaldiv">
               <button onClick={this.handleClose} className="closebtn">X</button>
-               <h1>{this.props.title}</h1>
-               <p>Click "Add column" for add a new static column with a name from input value</p>
-               <p>Click "Test fetch" to load columns from a local server and render it</p>
-               <p>Click "Show modal" to show the modal box</p>
+               <h1 className="modalHeader">{this.props.title}</h1>
+               {this.props.children}
           </div>
         </div>
         </div>, document.getElementById('portal')

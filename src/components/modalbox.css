@@ -1,14 +1,25 @@
 .openerbtn{
     
-    color:black;
-  font-size: 100%;
-  background-color: rgb(112, 100, 100);
-  border: 1px solid #ccc;
+    color:white;
+  font-size: 120%;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color:  transparent;
+  border: 3px solid #ccc;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  margin-top:10px;
+  margin-left:10px;
+}
+.openerbtndiv{
+    display: flex;
+    justify-content: start;
+}
+.openerbtn:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .backgrounddiv{
     background-color: rgba(0, 0, 0, 0.5);
@@ -51,4 +62,7 @@
     display: inline-block;
     line-height: 0px;
     padding: 11px 3px; 
+}
+.modalHeader{
+    margin-top:-15px;
 }
